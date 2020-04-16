@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+	const menuBtn = document.querySelector('.menu-btn');
+	const headerNav = document.querySelector('.header__nav');
+	menuBtn.addEventListener('click', toggleMenu);
+
+	function toggleMenu() {
+		headerNav.classList.toggle('active');
+		navMenu.style.display = 'none';
+		closeMenu.style.display = 'block';
+
+	};
+
+
 	var mySwiper = new Swiper('.swiper-container', {
 		speed: 400,
 		slidesPerView: 3,
