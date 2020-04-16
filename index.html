@@ -7,7 +7,8 @@
 
 	<title>Балтресурс - Поставка высококачественных
 		материалов</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="description" content="Поставка высококачественных
+	материалов">
 
 	<meta name="viewport" content="width=device-width">
 
@@ -31,9 +32,7 @@
 					<a href="#" class="menu-btn">
 						<img src="img/menu.svg" alt="Menu">
 					</a>
-					<a href="#" class="close-btn">
-						<img src="img/close.svg" alt="Close">
-					</a>
+	
 
 
 					<div class="header__logos">
@@ -74,7 +73,8 @@
 						<li class="header__promo-item">Резинки</li>
 						<li class="header__promo-item">Фиксаторы</li>
 					</ul>
-					<a href="#" class="header__promo-button">Хочу заказать</a>
+					<a href="#" class="header__promo-button" data-fancybox data-src="#modal"
+					href="javascript:;"  >Хочу заказать</a>
 					<!-- /.header__promo-button -->
 				</div>
 				<!-- /.header__promo-wrapper -->
@@ -381,7 +381,15 @@
 
 		</div>
 	</footer>
-
+	<div id="modal">
+		<form enctype="multipart/form-data" method="post" action="#" class="contacts-form">
+			<h4 class="form-title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
+			<input type="text" class="input input-name " placeholder="Ваше имя" required>
+			<input type="text" class="input input-phone" id="phone2" placeholder="Ваш телефон" required>
+			<button class="button">Отправить</button>
+		</form>
+	</div>
+	<a href="#" class="back-to-top"> <img src="img/top.svg" alt=""></a>
 	<script src="js/scripts.min.js"></script>
 
 </body>
